@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Course Materials — Prince Learning Hub</title>
+<script>window.PLH_BASE = "../";</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<section class="page-head">
+  <div class="bg" style="background-image:url(../images/library.jpg)"></div>
+  <div class="scrim"></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="../index.html">Home</a> › <span class="cur">Materials</span></div>
+    <p class="eyebrow light" style="margin-top:18px">Library</p>
+    <h1>Course Materials</h1>
+    <p>Download lecture handouts and study guides in PDF, prepared by Mr. Damilola for every course. Click any document to save it to your computer.</p>
+  </div>
+</section>
+
+<div class="wrap" style="padding:40px 24px 20px">
+  <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between">
+    <div class="filter-row" id="catChips"></div>
+    <div class="search" style="width:min(100%,340px)">
+      <span class="ico">🔍</span>
+      <input id="matSearch" placeholder="Search by title, code or level">
+    </div>
+  </div>
+  <div class="filter-row" id="depChips" style="margin-top:16px"></div>
+  <p class="small muted" style="margin:22px 0 0" id="matCount"></p>
+  <div class="grid grid-3" id="matGrid" style="margin-top:20px"></div>
+</div>
+
+<div id="site-footer"></div>
+<script src="../data/content.js"></script>
+<script src="../data/questions.js"></script>
+<script src="../js/store.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/materials.js"></script>
+</body>
+</html>
